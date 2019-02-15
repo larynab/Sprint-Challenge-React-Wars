@@ -25,12 +25,16 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React JS is a compartimalized way of innovating code to give the user the ability to interact with web pages in real time to store and receive data.
 
 - [ ] What does it mean to _think_ in react?
+To think in react is to see how one can display the final product to the user through means of how parts are interconnected with eachother. The way I see it is how a mechanical vehicle works, how it was able to start and how the driver(user) able to interact with the vehicle itself to affect its performance. Hands are turning the steering wheel, which is coneected to the drive axel, controlling the movement where the chasis goes. Then we have the engine which perpetuates movement being controlled precisely by the fluctuation of the users foot input, and etc.
 
 - [ ] Describe state.
+The data which is basically the users manual of instruction of what to do when one component activates.
 
 - [ ] Describe props.
+The delivery system where data of state will transfer through components through encapsulation and how each component will add more instructions to the usage of that data.
 
 ## Project Set Up
 
