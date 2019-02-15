@@ -7,16 +7,15 @@ class AppDog extends Component {
   constructor() {
     super();
     this.state = {
-      randomDogs: [
-        {
-          
-        }
-      ]
+      randomDogs: []
     };
   }
 
   componentDidMount() {
-    this.getDogs('https://dog.ceo/api/breeds/image');
+    // for (let i=0; i < 10; i++) {
+    this.getDogs('https://dog.ceo/api/breed/hound/images/random/10');
+    // this.state.randomDogs.push([i]); 
+    // } EXPERIEMENT
   }
 
   getDogs = URL => {
@@ -26,8 +25,12 @@ class AppDog extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ randomDogs: data.results });
+        this.setState({ randomDogs: data.message });
       })
+      .catch(err => {
+        throw new Error(err);
+      });
+
 
   };
 
@@ -36,9 +39,8 @@ class AppDog extends Component {
       <div className="App">
         <h2>Dogs</h2>
         <div className='char-list'>
-          {this.state.randomDogs.map((dogmap, index) => (
-          <Dog key={index} randomDogs={dogmap} />
-          ))}
+          {this.state.randomDogs.map((dogmap, message) => (
+          <Dog key={message} randomDogs={dogmap} />))}
         </div>
       </div>
     );

@@ -13,6 +13,23 @@
   justify-content: center;
   color: white;
 }
+.Header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  }
+.Navigation {
+  background-color: rgb(1, 0, 77);
+  width: 175px;
+  color: silver;
+  text-decoration: none;
+  justify-content: center;
+  margin: auto;
+}
+.Navigation a {
+  text-decoration: none;
+  color: silver;
+}
 
 
 

@@ -3,6 +3,7 @@ import './App.css';
 
 import Character from './components/Character';
 import Planets from './components/Planets';
+import AppDog from './AppDog';
 
 class App extends Component {
   constructor() {
@@ -49,10 +50,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <div className="Header">
+          <h1>React Wars</h1>
+        </div>
+        <div className="Navigation">
+        <p><a href="#Plants">Planets</a></p>
+        <p><a href="#Dogs">Random Dogs</a></p>
+        </div>
         <h2>Characters</h2>
         <div className='char-list'>
-          {this.state.starwarsChars.map((charmap, index) => (
+          {this.state.starwarsChars.map((charmap, index) => ( //index as number or unique
           <Character key={index} starwarsChars={charmap} />
           ))}
         </div>
@@ -62,6 +69,7 @@ class App extends Component {
           <Planets key={indexB} starwarsPlanets={planmap} />
           ))}            
         </div>
+        <AppDog />
       </div>
     );
   }
