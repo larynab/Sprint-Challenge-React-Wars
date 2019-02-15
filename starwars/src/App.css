@@ -8,8 +8,9 @@
 /* write your parent styles in here for your App.js */
 .char-list {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
   color: white;
 }
 
