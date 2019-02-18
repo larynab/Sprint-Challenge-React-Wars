@@ -6,3 +6,30 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.char-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+.Header {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  }
+.Navigation {
+  background-color: rgb(1, 0, 77);
+  width: 175px;
+  color: silver;
+  text-decoration: none;
+  justify-content: center;
+  margin: auto;
+}
+.Navigation a {
+  text-decoration: none;
+  color: silver;
+}
+
+
+
